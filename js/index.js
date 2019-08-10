@@ -36,14 +36,10 @@ headerText.addEventListener('mouseover', (e) => {
     }, 500)
 }, false);
 
-introImg.addEventListener('dblclick', (e) => {
-    introImg.style.display = 'none';
-});
+introImg.addEventListener('dblclick', displayNone);
 
 container.addEventListener('click', (event) => {
-
     container.style.background = 'salmon';
-    container.stopPropagation();
 });
 
 firstImg.addEventListener('click', bigger);
@@ -70,3 +66,18 @@ function prevent(event) {
     event.preventDefault();
     alert('preventDefault stopped this page from reloading');
 };
+
+function displayNone(event) {
+    event.stopPropagation();
+    event.currentTarget.style.display = 'none';
+};
+
+
+// GSAP animations
+
+TweenMax.staggerTo('nav a', 1, {
+    delay: 1.2,
+    opacity: 1,
+    x: 20,
+    ease: Expo.easeInOut
+}, 0.3);
