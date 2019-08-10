@@ -82,15 +82,36 @@ TweenMax.staggerTo('nav a', 1, {
     ease: Expo.easeInOut
 }, 0.3);
 
-TweenMax.from('img', 2, {
+TweenMax.from('.intro-img', 2, {
     delay: 1,
     opacity: 0,
     y: 30,
     ease: Expo.easeInOut,
 });
 
+TweenMax.from('.intro h2', 2, {
+    delay: 1.2,
+    opacity: 0,
+    y: 30,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from('.intro p', 2, {
+    delay: 1.4,
+    opacity: 0,
+    y: 30,
+    ease: Expo.easeInOut
+});
+
 TweenMax.from('.logo-heading', 1, {
     opacity: 0,
     y: 5,
     ease: Expo.easeInOut
+});
+
+TweenMax.from('.content-section', 2, {
+    delay: 2,
+    opacity: 0,
+    y: 10,
+    ease: Expo.easeInOut,
 });
