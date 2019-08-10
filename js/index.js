@@ -76,8 +76,21 @@ function displayNone(event) {
 // GSAP animations
 
 TweenMax.staggerTo('nav a', 1, {
-    delay: 1.2,
+    delay: .5,
     opacity: 1,
-    x: 20,
+    y: -5,
     ease: Expo.easeInOut
 }, 0.3);
+
+TweenMax.from('img', 2, {
+    delay: 1,
+    opacity: 0,
+    y: 30,
+    ease: Expo.easeInOut,
+});
+
+TweenMax.from('.logo-heading', 1, {
+    opacity: 0,
+    y: 5,
+    ease: Expo.easeInOut
+});
