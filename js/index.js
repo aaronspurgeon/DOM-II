@@ -50,6 +50,17 @@ pTag.forEach(item => item.addEventListener('scroll', (e) => {
     item.style.fontSize = '1.1rem'
 }));
 
+window.addEventListener('keydown', event => {
+    if (event.key == 'k') {
+        document.body.style.background = 'dodgerblue'
+    }
+});
+window.addEventListener('keyup', event => {
+    if (event.key == 'k') {
+        document.body.style.background = ''
+    }
+});
+
 
 // functions
 function bigger(event) {
