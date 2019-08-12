@@ -46,9 +46,9 @@ firstImg.addEventListener('click', bigger);
 
 content.addEventListener('click', lightBlue);
 
-window.onload = (event) => {
-    console.log('hi');
-};
+pTag.forEach(item => item.addEventListener('scroll', (e) => {
+    item.style.fontSize = '1.1rem'
+}));
 
 
 // functions
