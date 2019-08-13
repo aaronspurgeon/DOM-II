@@ -4,6 +4,7 @@
   background: @main-bg;
   border-bottom: 2px dashed @navigation-border;
   position: fixed;
+  z-index: 10;
 
   .nav-container {
     height: 100%;
@@ -27,6 +28,7 @@
       width: 350px;
       display: flex;
       justify-content: space-evenly;
+      
 
       @media @mobile {
         width: 100%;
@@ -38,6 +40,7 @@
         font-size: 1.6rem;
         color: @font-color;
         text-decoration: none;
+        opacity: 0;
       }
     }
   }
